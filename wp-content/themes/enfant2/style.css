@@ -1,0 +1,46 @@
+/*
+Theme Name: ActuReimscustom
+Template: customizr
+*/
+
+@import url("../customizr/style.css");
+
+
+.header-search {
+	display: none;  
+}
+
+@media screen and (min-width: 768px) {
+	.header-search {
+		margin-left: auto;
+		display: block;
+        width: 20em;
+	}
+    .header-search #s {
+        width: 10em;
+    }
+}
+
+.tooltip {
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px dotted black;
+}
+
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+
+    /* Position the tooltip */
+    position: absolute;
+    z-index: 1;
+}
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+}
